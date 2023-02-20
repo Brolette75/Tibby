@@ -1,0 +1,8 @@
+.mat-dialog-title, .mat-dialog-content, .mat-dialog-actions {
+    background:  #F8ECBE;
+    font-size: medium;
+}
+
+.container {
+    padding: 20px;
+}

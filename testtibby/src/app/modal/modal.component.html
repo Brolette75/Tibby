@@ -1,0 +1,20 @@
+<h1 class="mat-dialog-title" mat-dialog-title>{{data.title}} <img src="../../assets/tibby abeille.svg" alt="abeille cartoon"></h1>
+<div class="mat-dialog-content" mat-dialog-content>
+    <div class="container">       
+         <form action="/action_page.php">
+           <label for="fname">Name</label>
+           <input type="text" id="fname" name="firstname" placeholder="Your name..">
+       
+           <label for="lname">Email</label>
+           <input type="text" id="lname" name="lastname" placeholder="Your Email..">
+       
+           <label for="subject">Message</label>
+           <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+       
+         </form>
+       </div>
+</div>
+<div class="mat-dialog-actions" mat-dialog-actions>
+  <button mat-button (click)="onNoClick()">Annuler</button>
+  <button mat-button [mat-dialog-close]="true">Envoyez</button>
+</div>
